@@ -1,0 +1,1172 @@
+﻿<%- include ('partials/landingPageHead'); %>
+
+  <body>
+
+    <%- include('partials/landingPageHeader') %>
+
+
+      <!--begin home section -->
+      <section class="home-section">
+
+        <div class="home-section-overlay"></div>
+
+        <!--begin container -->
+        <div class="container">
+
+          <!--begin row -->
+          <div class="row">
+
+            <!--begin col-md-8-->
+            <div class="col-md-8 mx-auto text-center padding-top-120">
+
+              <h1 class="wow slideInUp" data-wow-delay="0.25s"
+                style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">Welcome To Furxwave Capital</h1>
+
+              <p class="hero-text wow slideInUp" data-wow-delay="0.5s"
+                style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">We are an award winning
+                multinational company. We believe in quality and standard worldwide.</p>
+
+              <!--begin newsletter_form_box -->
+              <div class="newsletter_form_box">
+
+                <!--begin newsletter-form -->
+                <% if(!user){ %>
+                  <form id="newsletter-form" class="newsletter-form">
+
+                    <a href="/login" class="btn-white small scrool wow slideInUp" data-wow-delay="0.75s"
+                      style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">Login</a>
+
+                    <a href="/signup" class="btn-white-border small scrool wow slideInUp" data-wow-delay="0.75s"
+                      style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">Signup</a>
+
+                  </form>
+                  <% } %>
+                    <!--end newsletter-form -->
+
+              </div>
+              <!--end newsletter_form_box -->
+
+            </div>
+            <!--end col-md-8-->
+
+          </div>
+          <!--end row -->
+
+        </div>
+        <!--end container -->
+
+      </section>
+      <!--end home section -->
+
+
+      <div class="tradingview-widget-container" style="width: 100%; height: 78px;">
+        <iframe scrolling="no" allowtransparency="true" frameborder="0"
+          src="https://www.tradingview-widget.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22proName%22%3A%22FOREXCOM%3ASPXUSD%22%2C%22title%22%3A%22S%26P%20500%22%7D%2C%7B%22proName%22%3A%22FOREXCOM%3ANSXUSD%22%2C%22title%22%3A%22US%20100%22%7D%2C%7B%22proName%22%3A%22FX_IDC%3AEURUSD%22%2C%22title%22%3A%22EUR%20to%20USD%22%7D%2C%7B%22proName%22%3A%22BITSTAMP%3ABTCUSD%22%2C%22title%22%3A%22Bitcoin%22%7D%2C%7B%22proName%22%3A%22BITSTAMP%3AETHUSD%22%2C%22title%22%3A%22Ethereum%22%7D%5D%2C%22showSymbolLogo%22%3Atrue%2C%22colorTheme%22%3A%22light%22%2C%22isTransparent%22%3Afalse%2C%22displayMode%22%3A%22adaptive%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A78%2C%22utm_source%22%3A%22crypt-main-capital.com%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22ticker-tape%22%2C%22page-uri%22%3A%22crypt-main-capital.com%2Findex.php%22%7D"
+          title="ticker tape TradingView widget" lang="en"
+          style="user-select: none; box-sizing: border-box; display: block; height: 46px; width: 100%;"></iframe>
+        <div class="tradingview-widget-copyright"><a
+            href="https://www.tradingview.com/?utm_source=crypt-main-capital.com&amp;utm_medium=widget_new&amp;utm_campaign=ticker-tape"
+            rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+
+        <style>
+          .tradingview-widget-copyright {
+            font-size: 13px !important;
+            line-height: 32px !important;
+            text-align: center !important;
+            vertical-align: middle !important;
+            /* @mixin sf-pro-display-font; */
+            font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
+            color: #B2B5BE !important;
+          }
+
+          .tradingview-widget-copyright .blue-text {
+            color: #2962FF !important;
+          }
+
+          .tradingview-widget-copyright a {
+            text-decoration: none !important;
+            color: #B2B5BE !important;
+          }
+
+          .tradingview-widget-copyright a:visited {
+            color: #B2B5BE !important;
+          }
+
+          .tradingview-widget-copyright a:hover .blue-text {
+            color: #1E53E5 !important;
+          }
+
+          .tradingview-widget-copyright a:active .blue-text {
+            color: #1848CC !important;
+          }
+
+          .tradingview-widget-copyright a:visited .blue-text {
+            color: #2962FF !important;
+          }
+        </style>
+      </div>
+
+
+      <!--begin partners-section-->
+      <div class="partners-section">
+
+        <!--begin container-->
+        <div class="container">
+
+          <!--begin row-->
+          <div class="row">
+
+            <!--begin col-sm-12-->
+            <div class="col-md-10 mx-auto text-center partners">
+              <h5 class="partners-title">As featured in:</h5>
+              <img src="images/award4a.png" class="partners" alt="image">
+              <img src="images/award5.png" class="partners" alt="image">
+              <img src="images/award3a.png" class="partners" alt="image">
+              <img src="images/award1a.png" class="partners" alt="image">
+            </div>
+            <!--end col-sm-12-->
+
+          </div>
+          <!--end row-->
+
+        </div>
+        <!--end container-->
+
+      </div>
+      <!--end partners-section-->
+
+
+
+
+      <!--begin section-white -->
+      <section class="section-white">
+
+        <!--begin container-->
+        <div class="container-fluid">
+
+          <!--begin row-->
+          <div class="row align-items-center">
+
+            <!--begin col-md-6-->
+            <div class="col-md-6 ">
+
+              <div class="margin-right-15">
+
+                <img src="images/about001.jpg" data-wow-delay="0.25s"
+                  style="visibility: visible; animation-delay: 0.25s; animation-name: slideInLeft;"
+                  class="wow slideInLeft width-100 image-shadow bottom-margins-images" alt="pic">
+
+              </div>
+
+            </div>
+            <!--end col-sm-6-->
+
+            <!--begin col-md-6-->
+            <div class="col-md-6">
+
+              <h3>Discover how we can help you to grow your business fast.</h3>
+
+              <p>In today's dynamic and ever-evolving financial landscape, the pursuit of wealth growth has become a
+                priority for many individuals and institutions alike. Whether you're a seasoned investor seeking to
+                diversify your portfolio or someone new to the world of investments, finding a trusted partner to
+                navigate
+                the complexities of financial markets is crucial. At our investment company, we understand the
+                importance
+                of
+                wealth creation and are dedicated to empowering our clients to achieve their financial goals through
+                strategic investment solutions.</p>
+              <p>One of the primary ways we help our clients grow their wealth is by offering personalized investment
+                strategies tailored to their unique needs and objectives. We recognize that no two investors are alike,
+                and
+                as such, we take the time to understand our clients' financial situation, risk tolerance, and long-term
+                goals. Whether you're planning for retirement, saving for your children's education, or aiming to build
+                a
+                legacy for future generations, our team of experienced professionals is here to provide expert guidance
+                and
+                support every step of the way.</p>
+
+
+
+            </div>
+            <!--end col-md-6-->
+
+          </div>
+          <!--end container-->
+
+      </section>
+      <!--end section-white-->
+
+      <!--begin section-grey -->
+      <section class="section-grey">
+
+        <!--begin container-->
+        <div class="container-fluid">
+
+          <!--begin row-->
+          <div class="row align-items-center">
+
+            <!--begin col-md-6-->
+            <div class="col-md-6">
+
+              <div class="nav flex-column nav-pills margin-right-25" id="v-pills-tab" role="tablist"
+                aria-orientation="vertical">
+
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                  aria-controls="v-pills-home" aria-selected="true">
+
+                  <!--begin features-second -->
+                  <div class="features-second">
+
+                    <div class="dropcaps-circle blue">
+                      <i class="fas fa-chart-line"></i>
+                    </div>
+
+                    <h4 class="margin-bottom-5">Customize your workflow.</h4>
+
+                    <p>Manage any process and be ready to address any challenge with total ease.</p>
+
+                  </div>
+                  <!--end features-second-->
+                </a>
+
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                  aria-controls="v-pills-profile" aria-selected="false">
+
+                  <!--begin features-second-->
+                  <div class="features-second">
+
+                    <div class="dropcaps-circle red">
+                      <i class="fas fa-network-wired"></i>
+                    </div>
+
+                    <h4 class="margin-bottom-5">Easy onboarding, fast adoption.</h4>
+
+                    <p>With Square getting your team on board is as simple as sending an email.</p>
+
+                  </div>
+                  <!--end features-second-->
+
+                </a>
+
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                  aria-controls="v-pills-messages" aria-selected="false">
+
+                  <!--begin features-second-->
+                  <div class="features-second">
+
+                    <div class="dropcaps-circle green">
+                      <i class="fas fa-rocket"></i>
+                    </div>
+
+                    <h4 class="margin-bottom-5">Improve subscriber retention.</h4>
+
+                    <p>Analyze customers by region, discounts and more and put a plan in place.</p>
+
+                  </div>
+                  <!--end features-second-->
+
+                </a>
+
+              </div>
+
+            </div>
+            <!--end col-md-6-->
+
+            <!--begin col-md-6 -->
+            <div class="col-md-6">
+
+              <div class="tab-content margin-left-20" id="v-pills-tabContent">
+
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                  aria-labelledby="v-pills-home-tab">
+                  <img src="images/about2.jpg" class="width-100 image-shadow top-margins-images" alt="pic">
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                  <img src="images/about5.jpg" class="width-100 image-shadow top-margins-images" alt="pic">
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                  <img src="images/about1.jpg" class="width-100 image-shadow top-margins-images" alt="pic">
+                </div>
+
+              </div>
+
+            </div>
+            <!--end col-md-6 -->
+
+          </div>
+          <!--end row-->
+
+        </div>
+        <!--end container-->
+
+      </section>
+      <!--end section-grey-->
+
+      <!--begin section-bg-1 -->
+      <section class="section-bg-1">
+
+        <div class="section-bg-overlay"></div>
+
+        <!--begin container-->
+        <div class="container">
+
+          <!--begin row-->
+          <div class="row">
+
+            <!--begin col md 7 -->
+            <div class="col-md-7 mx-auto margin-bottom-20 text-center">
+
+              <h2 class="white-text">Facts About Our Company</h2>
+
+            </div>
+            <!--end col md 7-->
+
+          </div>
+          <!--end row-->
+
+          <!--begin row-->
+          <div class="row">
+
+            <!--begin fun-facts-box -->
+            <div class="col-md-2 offset-md-2 fun-facts-box text-center">
+
+              <i class="far fa-gem"></i>
+
+              <p class="fun-facts-title"><span class="facts-numbers">1050+</span><br>Projects Completed</p>
+
+            </div>
+            <!--end fun-facts-box -->
+
+            <!--begin fun-facts-box -->
+            <div class="col-md-2 fun-facts-box text-center">
+
+              <i class="far fa-heart"></i>
+
+              <p class="fun-facts-title"><span class="facts-numbers">2M+</span><br>Trsuted Clients</p>
+
+            </div>
+            <!--end fun-facts-box -->
+
+            <!--begin fun-facts-box -->
+            <div class="col-md-2 fun-facts-box text-center">
+
+              <i class="fas fa-award"></i>
+
+              <p class="fun-facts-title"><span class="facts-numbers">1210</span><br>Design Awards</p>
+
+            </div>
+            <!--end fun-facts-box -->
+
+            <!--begin fun-facts-box -->
+            <div class="col-md-2 fun-facts-box text-center">
+
+              <i class="fas fa-anchor"></i>
+
+              <p class="fun-facts-title"><span class="facts-numbers">2137</span><br>Line Of Codes</p>
+
+            </div>
+            <!--end fun-facts-box -->
+
+          </div>
+          <!--end row-->
+
+        </div>
+        <!--end container-->
+
+      </section>
+      <!--end section-bg-1 -->
+
+      <!--begin testimonials section -->
+      <section class="section-grey" id="testimonials">
+
+        <!--begin container -->
+        <div class="container-fluid">
+
+          <!--begin row -->
+          <div class="row align-items-center">
+
+            <!--begin col-md-5 -->
+            <div class="col-md-5 col-sm-12">
+
+              <h2>What People Are Saying.</h2>
+
+              <p>"I've been investing with Furxwave Capital company for years, and I must say, they've consistently
+                delivered
+                exceptional results. Their dedication to client success and strategic investment approach are truly
+                commendable.</p>
+
+              <p>"The support team at Furxwave Capital company is top-notch! They're always available to address any
+                concerns or
+                questions I have, providing prompt and helpful assistance whenever I need it."</p>
+
+              <p>"Accessibility is key for me, and Furxwave Capital company nails it with their user-friendly
+                platform.
+                It's easy
+                to navigate, and I appreciate how they make investing accessible to everyone, regardless of experience."
+              </p>
+
+              <p>"Cost control is crucial in the investment world, and I'm impressed by how Furxwave Capital company
+                manages
+                expenses without compromising on quality. Their transparent fee structure gives me peace of mind."</p>
+
+              <p>"One of the highlights of investing with Furxwave Capital company is the opportunity to chat with
+                fellow
+                investors. It's a great way to share insights, discuss strategies, and learn from each other's
+                experiences.
+                Overall, it
+                adds tremendous value to the investing journey."</p>
+            </div>
+            <!--end col-md-5 -->
+
+            <!--begin col-md-1 -->
+            <div class="col-md-1"></div>
+            <!--end col-md-1 -->
+
+            <!--begin col-md-6-->
+            <div class="col-md-6">
+
+              <!--begin accordion -->
+              <div class="accordion" id="accordionFAQ">
+
+                <!--begin card -->
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        <img src="images/testimonials3.jpg" alt="testimonials" class="testim-img">
+                        <p class="testim-name">Alexandra Smith / <span>Manager - SmartCoders</span></p>
+                      </button>
+                    </h5>
+                  </div>
+
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFAQ">
+                    <div class="card-body">
+                      Our manager is a seasoned professional with a wealth of experience in financial management and
+                      investment strategies.
+                      With a keen eye for market trends and a proven track record of success, they lead our investment
+                      team
+                      with expertise and
+                      precision.
+                    </div>
+                  </div>
+
+                </div>
+                <!--end card -->
+
+                <!--begin card -->
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <img src="images/testimonials2.jpg" alt="testimonials" class="testim-img">
+                        <p class="testim-name">Gregory L, Ebel / <span>CEO</span></p>
+                      </button>
+                    </h5>
+                  </div>
+
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFAQ">
+                    <div class="card-body">
+                      At the helm of our company is our visionary CEO, who brings a wealth of leadership experience and
+                      strategic vision to
+                      the table. With a passion for innovation and a commitment to excellence, they drive our company
+                      forward, ensuring that
+                      we remain at the forefront of the ever-evolving investment landscape.
+                    </div>
+                  </div>
+                </div>
+                <!--end card -->
+
+                <!--begin card -->
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <img src="images/testimonials1.jpg" alt="testimonials" class="testim-img">
+                        <p class="testim-name">Christina Pages / <span>Designer - New Fashion</span></p>
+                      </button>
+                    </h5>
+                  </div>
+
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFAQ">
+                    <div class="card-body">
+                      Behind the sleek and user-friendly design of our platform is our talented designer, who combines
+                      creativity with
+                      functionality to deliver an exceptional user experience. With a keen understanding of user
+                      interface
+                      design and a flair
+                      for aesthetics, they ensure that navigating our platform is not only intuitive but also visually
+                      engaging.
+
+                    </div>
+                  </div>
+                </div>
+                <!--end card -->
+
+              </div>
+              <!--end accordion -->
+
+            </div>
+            <!--end col-md-6-->
+
+          </div>
+          <!--end row -->
+
+        </div>
+        <!--end container -->
+
+      </section>
+      <!--end testimonials section -->
+
+
+      <section style="background-color: #fff;" class="our-values">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="text-center">OUR VALUES</h2>
+              <p class="text-center">At the heart of our business are our partners: the entrepreneurs and management
+                teams we back; the
+                investors in our funds; the advisers and intermediaries we work with; and the banks and other
+                lending institutions to our deals.</p>
+            </div>
+
+            <hr>
+            <div class="col-md-3">
+              <h4 style="border-bottom:2px solid #2154cf" class="pb-3">Highly Ambitious</h4>
+              <p>We strive to build world-class businesses to generate superior returns for our partners.</p>
+            </div>
+            <div class="col-md-3">
+              <h4 style="border-bottom:2px solid #2154cf" class="pb-3">Winning</h4>
+              <p>We are here to win. We are constantly improving, and are committed to out-thinking and out-executing
+                our competitors. We take on what others dismiss as impossible, and solve the hard problems that
+                others walk away from. This is why we hire the best.</p>
+            </div>
+            <div class="col-md-3">
+              <h4 style="border-bottom:2px solid #2154cf" class="pb-3">Integrity</h4>
+              <p>We do things the right way, without compromise, the first time – every time. We are direct, decisive
+                and, above all, accountable. We practice sound judgment and common sense in our actions that
+                conforms to the letter and spirit of the law at all times. We win on the merits, with integrity.</p>
+            </div>
+            <div class="col-md-3">
+              <h4 style="border-bottom:2px solid #2154cf" class="pb-3">Learning</h4>
+              <p>We are driven by a thirst for knowledge. We are constantly learning – from each other and from
+                inspired thinkers around the world. We passionately pursue new ideas, new innovations and new
+                strategies that will strengthen our competitive advantage</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--begin team section -->
+      <section class="section-grey" id="team">
+
+        <!--begin container-->
+        <div class="container-fluid">
+
+          <!--begin row-->
+          <div class="row">
+
+            <!--begin col-md-12 -->
+            <div class="col-md-12 text-center">
+
+              <h2 class="section-title">Meet Our Team</h2>
+
+              <p class="section-subtitle">Discover more about our high performing team.</p>
+
+            </div>
+            <!--end col-md-12 -->
+
+            <!--begin team-item -->
+            <div class="col-sm-12 col-md-4 margin-top-30">
+
+              <img src="images/team001.jpg" class="team-img width-100" alt="pic">
+
+              <div class="team-item">
+
+                <h3>CHRISTINA HAWKINS</h3>
+
+                <div class="team-info">
+                  <p>Head of SEO</p>
+                </div>
+
+                <p>Johnathan is our co-founder and has developed search strategies for a variety of clients for over 5
+                  years.</p>
+
+              </div>
+
+            </div>
+            <!--end team-item -->
+
+            <!--begin team-item -->
+            <div class="col-sm-12 col-md-4 margin-top-30">
+
+              <img src="images/team002.jpg" class="team-img width-100" alt="pic">
+
+              <div class="team-item">
+
+                <h3>ANDRES JOHANSON</h3>
+
+                <div class="team-info geen">
+                  <p>Marketing Manager</p>
+                </div>
+
+                <p>Andres fell in love with marketing at the school and looks forward to being part of the industry for
+                  years.</p>
+
+              </div>
+
+            </div>
+            <!--end team-item -->
+
+            <!--begin team-item -->
+            <div class="col-sm-12 col-md-4 margin-top-30">
+
+              <img src="images/team003.jpg" class="team-img width-100" alt="pic">
+
+              <div class="team-item">
+
+                <h3>ALEXANDRA SMITHS</h3>
+
+                <div class="team-info green">
+                  <p>SEO Specialist</p>
+                </div>
+
+                <p>Graduating with a degree in Spanish, English and French, she has always loved writing.</p>
+
+              </div>
+
+            </div>
+            <!--end team-item -->
+
+          </div>
+          <!--end row-->
+
+        </div>
+        <!--end container-->
+
+      </section>
+      <!--end team section-->
+
+      <!--begin section-bg-2 -->
+      <section class="section-bg-2">
+
+        <div class="section-bg-overlay"></div>
+
+        <!--begin container-->
+        <div class="container">
+
+          <!--begin row-->
+          <div class="row">
+
+            <!--begin col md 7 -->
+            <div class="col-md-10 mx-auto text-center">
+
+              <h2 class="white-text">Award-Winning Agency</h2>
+
+              <p class="white-text">Welcome to Furxwave Capital company, an award-winning agency renowned for its
+                excellence in investments. With a track record
+                of innovation, creativity, and profits, we've earned recognition from prestigious institutions
+                and industry
+                peers alike. Our commitment to delivering exceptional service and exceeding client expectations has
+                propelled us to the
+                forefront of the industry, earning us numerous accolades and awards. At Furxwave Capital company,
+                we're
+                proud to be recognized as
+                leaders in our field, and we're dedicated to continuing our tradition of excellence as we strive to set
+                new
+                standards
+                and exceed benchmarks in everything we do.</p>
+
+            </div>
+            <!--end col md 7-->
+
+          </div>
+          <!--end row-->
+
+        </div>
+        <!--end container-->
+
+      </section>
+      <!--end section-bg-2 -->
+
+      <!--begin features section -->
+      <section class="section-white" id="features">
+
+        <!--begin container -->
+        <div class="container-fluid">
+
+          <!--begin row -->
+          <div class="row">
+
+            <!--begin col-md-12-->
+            <div class="col-md-12 text-center padding-bottom-10">
+
+              <h2 class="section-title">Amazing Features</h2>
+
+            </div>
+            <!--end col-md-12 -->
+
+          </div>
+          <!--end row -->
+
+          <!--begin row -->
+          <div class="row">
+
+            <!--begin col-md-4-->
+            <div class="col-md-4">
+
+              <div class="feature-box light-green wow fadeIn" data-wow-delay="0.25s"
+                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+
+                <i class="fas fa-tools"></i>
+
+                <div class="feature-box-text">
+
+                  <h4>Support 24/7</h4>
+
+                  <p>Our investment company website is designed with your needs in mind, offering round-the-clock
+                    support
+                    to
+                    ensure you
+                    receive assistance whenever you need it.</p>
+
+                </div>
+
+              </div>
+
+            </div>
+            <!--end col-md-4 -->
+
+            <!--begin col-md-4-->
+            <div class="col-md-4">
+
+              <div class="feature-box light-blue wow fadeIn" data-wow-delay="0.5s"
+                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+
+                <i class="fas fa-users"></i>
+
+                <div class="feature-box-text">
+
+                  <h4>User Friendly</h4>
+
+                  <p>With a user-friendly interface, navigating through our platform is a breeze, allowing you to access
+                    investment
+                    opportunities effortlessly.</p>
+
+                </div>
+
+              </div>
+
+            </div>
+            <!--end col-md-4 -->
+
+            <!--begin col-md 4-->
+            <div class="col-md-4">
+
+              <div class="feature-box orange wow fadeIn" data-wow-delay="0.75s"
+                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+
+                <i class="far fa-bell"></i>
+
+                <div class="feature-box-text">
+
+                  <h4>Notifications</h4>
+
+                  <p>Stay informed and never miss out on important updates with our notification system, keeping you in
+                    the
+                    loop every step
+                    of the way.</p>
+
+
+                </div>
+
+              </div>
+
+            </div>
+            <!--end col-md-4 -->
+
+          </div>
+          <!--end row -->
+
+          <!--begin row -->
+          <div class="row">
+
+            <!--begin col-md-4-->
+            <div class="col-md-4">
+
+              <div class="feature-box dark-blue wow fadeIn" data-wow-delay="1s"
+                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+
+                <i class="fas fa-gift"></i>
+
+                <div class="feature-box-text">
+
+                  <h4>Accesibility</h4>
+
+                  <p>Our website is accessible from any device, ensuring you can manage your investments on the go.</p>
+
+                </div>
+
+              </div>
+
+            </div>
+            <!--end col-md-4 -->
+
+            <!--begin col-md-4-->
+            <div class="col-md-4">
+
+              <div class="feature-box light-red wow fadeIn" data-wow-delay="1.25s"
+                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+
+                <i class="fas fa-piggy-bank"></i>
+
+                <div class="feature-box-text">
+
+                  <h4>Cost Control</h4>
+
+                  <p>We prioritize cost control, helping you maximize your returns while minimizing expenses.</p>
+
+                </div>
+
+              </div>
+
+            </div>
+            <!--end col-md-4 -->
+
+            <!--begin col-md-4-->
+            <div class="col-md-4">
+
+              <div class="feature-box dark-green wow fadeIn" data-wow-delay="1.5s"
+                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+
+
+                <i class="far fa-comments"></i>
+
+
+                <div class="feature-box-text">
+
+                  <h4>Chat With our customer service</h4>
+
+                  <p>Connect with the company customer service through our support feature, fostering a
+                    sense of community
+                    and collaboration.</p>
+
+                </div>
+
+              </div>
+
+            </div>
+            <!--end col-md-4 -->
+
+          </div>
+          <!--end row -->
+
+        </div>
+        <!--end container -->
+
+      </section>
+      <!--end features section -->
+
+      <!--begin pricing section -->
+      <section class="section-grey" id="pricing">
+
+        <!--begin container -->
+        <div class="container-fluid">
+
+          <!--begin row -->
+          <div class="row align-items-center">
+
+            <!--begin col-md-4 -->
+            <div class="col-md-4 col-sm-12">
+
+              <h3>Great pricing plans tailored to your budgets.</h3>
+
+              <p>Make a deposit and choose an investment plan and await the return of your investments with your capital
+                within the specified duration in each investment paln</p>
+
+            </div>
+            <!--end col-md-4 -->
+
+            <% plans.forEach(function(plan){ %>
+              <!--begin col-md-4 -->
+
+              <div class="col-md-4 col-sm-6" style="visibility: visible;">
+
+                <div class="price-box-grey">
+
+                  <ul class="pricing-list">
+
+                    <li>
+                      <h4 style="color: #fff;">
+                        <%= plan.name %>
+                      </h4>
+                    </li>
+
+                    <li class="price-title">Duration: <%= plan.duration %> <%= plan.duration === 1 ? 'day' : 'days' %></li>
+                    <p></p>
+
+                    <li class="price-title">Minimum: <span style="font-size: 25px;"><%= plan.min %></span></li>
+                    <p></p>
+                    <li class="price-title">Maximum: <span style="font-size: 25px;"><%= plan.max %></span></li>
+                    <p></p>
+                    <li class="price-title">Interest: <span style="font-size: 25px;"><%= plan.roi %>%</span></li>
+                    <p></p>
+                    <li class="price-title">24/7 online support</li>
+
+                    <li class="price-tag"><a href="/invest">CHOOSE PLAN</a></li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+              <!--end col-md-4 -->
+              <% }) %>
+
+
+          </div>
+
+        </div>
+        <!--end container -->
+
+      </section>
+      <!--end pricing section -->
+
+      <section>
+        <div class="container">
+          <!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container mb-5" style="width: 100%; height: 400px;">
+            <iframe scrolling="no" allowtransparency="true" frameborder="0"
+              src="https://www.tradingview-widget.com/embed-widget/forex-cross-rates/?locale=en#%7B%22width%22%3A%22100%25%22%2C%22height%22%3A400%2C%22currencies%22%3A%5B%22EUR%22%2C%22USD%22%2C%22JPY%22%2C%22GBP%22%2C%22CHF%22%2C%22AUD%22%2C%22CAD%22%2C%22NZD%22%2C%22CNY%22%5D%2C%22utm_source%22%3A%22purxinvestment.org%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22forex-cross-rates%22%2C%22page-uri%22%3A%22purxinvestment.org%2F%3Fa%3Dhome%22%7D"
+              title="forex cross-rates TradingView widget" lang="en"
+              style="user-select: none; box-sizing: border-box; display: block; height: 100%; width: 100%;"></iframe>
+
+            <style>
+              .tradingview-widget-copyright {
+                font-size: 13px !important;
+                line-height: 32px !important;
+                text-align: center !important;
+                vertical-align: middle !important;
+                /* @mixin sf-pro-display-font; */
+                font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
+                color: #B2B5BE !important;
+              }
+
+              .tradingview-widget-copyright .blue-text {
+                color: #2962FF !important;
+              }
+
+              .tradingview-widget-copyright a {
+                text-decoration: none !important;
+                color: #B2B5BE !important;
+              }
+
+              .tradingview-widget-copyright a:visited {
+                color: #B2B5BE !important;
+              }
+
+              .tradingview-widget-copyright a:hover .blue-text {
+                color: #1E53E5 !important;
+              }
+
+              .tradingview-widget-copyright a:active .blue-text {
+                color: #1848CC !important;
+              }
+
+              .tradingview-widget-copyright a:visited .blue-text {
+                color: #2962FF !important;
+              }
+            </style>
+          </div>
+          <!-- TradingView Widget END -->
+          <div class="d-flex justify-content-between">
+            <div style="width: 48%">
+              <table class="table table-striped recent-tranx-table">
+                <thead style="background:rgba(15, 39, 101, 0.85);  color:#ffffff;">
+                  <tr>
+                    <th scope="col">Latest Deposits</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody id="ld_body">
+                  <tr>
+                    <td>Thùy Meister</td>
+                    <td>22-02-2024</td>
+                    <td>$6321</td>
+                  </tr>
+                  <tr>
+                    <td>Sieuwerd Jager</td>
+                    <td>22-02-2024</td>
+                    <td>$8784</td>
+                  </tr>
+                  <tr>
+                    <td>Yui Lachapelle</td>
+                    <td>22-02-2024</td>
+                    <td>$1620</td>
+                  </tr>
+                  <tr>
+                    <td>Brooke Ibeabuchi</td>
+                    <td>22-02-2024</td>
+                    <td>$18262</td>
+                  </tr>
+                  <tr>
+                    <td>Chinwemma Imamura</td>
+                    <td>22-02-2024</td>
+                    <td>$25191</td>
+                  </tr>
+                  <tr>
+                    <td>Sheshy Buttenshaw</td>
+                    <td>22-02-2024</td>
+                    <td>$8244</td>
+                  </tr>
+                  <tr>
+                    <td>正男 Третьяков</td>
+                    <td>22-02-2024</td>
+                    <td>$7630</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div style="width: 48%">
+              <table class="table table-striped recent-tranx-table">
+                <thead style="background:#121212;  color:#ffffff;">
+                  <tr>
+                    <th scope="col">Latest Withdrawals</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody id="lw_body">
+                  <tr>
+                    <td>Andrée Nilsen</td>
+                    <td>22-02-2024</td>
+                    <td>$2186</td>
+                  </tr>
+                  <tr>
+                    <td>Aririkutatakufu Евсеева</td>
+                    <td>22-02-2024</td>
+                    <td>$8912</td>
+                  </tr>
+                  <tr>
+                    <td>Yong Petö</td>
+                    <td>22-02-2024</td>
+                    <td>$1884</td>
+                  </tr>
+                  <tr>
+                    <td>Sulisław McIntosh</td>
+                    <td>22-02-2024</td>
+                    <td>$1798</td>
+                  </tr>
+                  <tr>
+                    <td>Nương Dam</td>
+                    <td>22-02-2024</td>
+                    <td>$8752</td>
+                  </tr>
+                  <tr>
+                    <td>Sebhat Sigfúsdóttir</td>
+                    <td>22-02-2024</td>
+                    <td>$15757</td>
+                  </tr>
+                  <tr>
+                    <td>Salvia Araujo</td>
+                    <td>22-02-2024</td>
+                    <td>$19476</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--begin faq section -->
+      <section class="section-white" id="faq">
+
+        <!--begin container -->
+        <div class="container">
+
+          <!--begin row -->
+          <div class="row">
+
+            <!--begin col-md-12-->
+            <div class="col-md-12 text-center padding-bottom-10">
+
+              <h2 class="section-title">Frequently Asked Questions</h2>
+
+            </div>
+            <!--end col-md-12 -->
+
+          </div>
+          <!--end row -->
+
+          <!--begin row -->
+          <div class="row">
+
+            <!--begin col-md-6-->
+            <div class="col-md-6">
+
+              <div class="faq-box">
+
+                <h5>How do you calculate the interest on my account?</h5>
+
+                <p>Depending on each plan. Interest on your Furxwave Capital account is acquired Daily, Weekly,
+                  Bi-Weekly, Monthly and Yearly and credited to your available balance at the end of each day.</p>
+
+              </div>
+
+              <div class="faq-box">
+
+                <h5>Can I do a direct deposit from my account balance?</h5>
+
+                <p>Yes! To make a deposit from your Furxwave Capital account balance. Simply login into
+                  your members account and click on Make Deposit and select the Deposit from Account Balance button.</p>
+
+              </div>
+
+            </div>
+            <!--end col-md-6 -->
+
+            <!--begin col-md-6-->
+            <div class="col-md-6">
+
+              <div class="faq-box">
+
+                <h5>How can I change my e-mail address or password?</h5>
+
+                <p>Log into your Furxwave Capital account and click on the "Account Information". You can
+                  change your e-mail address and password there.</p>
+
+              </div>
+
+              <div class="faq-box">
+
+                <h5>How can I invest with Furxwave Capital?</h5>
+
+                <p>To make a investment you must first become a member of Furxwave Capital.
+                  Once you are signed up, you can make your first deposit. All deposits must be made through the Members
+                  Area. You can login using the member username and password you receive when signup.</p>
+
+              </div>
+
+            </div>
+
+            <!--end col-md-6 -->
+
+          </div>
+          <!--end row -->
+          <div style="text-align: center;">
+            <a href="/faq" class="btn btn-primary" style="text-align: center;">See More FAQ's</a>
+          </div>
+
+        </div>
+        <!--end container -->
+
+      </section>
+      <!--end faq section -->
+
+      <%- include('partials/landingPageFooter') %>

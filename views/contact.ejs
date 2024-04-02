@@ -1,0 +1,52 @@
+<%- include ('partials/landingPageHead'); %>
+
+<body>
+
+  <header><%- include('partials/landingPageHeader') %></header>
+
+
+  <section class="nk-faq-section section-space section-space-bottom contact-card">
+    <div class="container">
+      <div class="nk-block-head">
+        <div class="row align-items-end pb-5 pb-xl-0">
+          <div class="col-xl-7">
+            <div class="nk-block-head-content text-center text-xl-start m-0">
+              <span class="overline-title small  mb-2 mb-md-3">CONTACT US</span>
+              <h2 class=" mb-2 mb-md-0">You can reach us through the following means.</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row gap g-4">
+        <div class="col-md-6 col-xl-4">
+          <div class="card h-100 p-0 border-1 border-light aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-body">
+              <div class="media media-lg media-middle media-circle text-bg-warning-soft mb-2 mb-md-4"><em class="icon ni ni-chat"></em></div>
+              <h5 class="mb-2 mb-md-1">Chat with our 24/7 Online Support.</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="card h-100 p-0 border-1 border-light aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-body">
+              <div class="media media-lg media-middle media-circle text-bg-primary-soft mb-2 mb-md-4"><em class="icon ni ni-call-alt"></em></div>
+              <% contacts.forEach(function(contact) { %>
+              <h5 class="mb-2 mb-md-1"><%= contact.number %></h5>
+              <% }); %>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="card h-100 p-0 border-1 border-light aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-body">
+              <div class="media media-lg media-middle media-circle text-bg-success-soft mb-2 mb-md-4"><em class="icon ni ni-emails"></em></div>
+              <h5 class="mb-2 mb-md-1">Email us at: Furxwavecapital@gmail.com</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%- include('partials/landingPageFooter') %>

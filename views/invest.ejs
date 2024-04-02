@@ -1,0 +1,193 @@
+<%- include('partials/dashboardHead') %>
+
+<body class="nk-body ui-rounder has-sidebar ui-light ">
+  <div class="nk-app-root">
+    <div class="nk-main ">
+      <div class="nk-sidebar is-light nk-sidebar-fixed " data-content="sidebarMenu">
+        <div class="nk-sidebar-element nk-sidebar-head">
+          <div class="nk-sidebar-brand"><a href="/" class="logo-link nk-sidebar-logo"><img src="images/enbridge.jpg" style="width: 100px;" alt="Company-icon"></a></div>
+          <div class="nk-menu-trigger me-n2"><a href="#" class="nk-nav-toggle nk-quick-nav-icon d-xl-none" data-target="sidebarMenu"><em class="icon ni ni-arrow-left"></em></a></div>
+        </div>
+        <div class="nk-sidebar-element">
+          <div class="nk-sidebar-content">
+            <div class="nk-sidebar-menu" data-simplebar="">
+              <%- include('partials/userNav') %>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nk-wrap ">
+        <div class="nk-header is-light nk-header-fixed is-light">
+          <div class="container-xl wide-xl">
+            <div class="nk-header-wrap">
+              <div class="nk-menu-trigger d-xl-none ms-n1 me-3"><a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a></div>
+              <div class="nk-header-brand d-xl-none"><a href="/" class="logo-link"><img src="images/enbridge.jpg" style="width: 100px;" alt="Company-icon"></a></div>
+
+              <div class="nk-header-tools">
+                <ul class="nk-quick-nav">
+
+
+                  <li class="dropdown user-dropdown"><a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+                      <div class="user-toggle">
+                        <div class="user-avatar sm"><em class="icon ni ni-user-alt"></em>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-md dropdown-menu-end">
+                      <div class="dropdown-inner user-card-wrap bg-lighter d-none d-md-block">
+                        <div class="user-card">
+                          <div class="user-avatar"><span>
+                              <% let letter = user.firstName.split('')[0] %>
+                              <%= letter %>
+                            </span></div>
+                          <div class="user-info"><span class="lead-text"><%= user.firstName %></span><span class="sub-text"><%= user.email %></span></div>
+                        </div>
+                      </div>
+                      <div class="dropdown-inner">
+                        <ul class="link-list">
+                          <li><a href="/user-profile"><em class="icon ni ni-user-alt"></em><span>View
+                                Profile</span></a></li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nk-content nk-content-fluid">
+          <div class="container-xl wide-xl">
+            <div class="nk-content-body">
+              <div class="nk-block-head nk-page-head nk-block-head-sm">
+                <div class="nk-block-head-between">
+                  <div class="nk-block-head-content">
+                    <h3 class="nk-block-title page-title">Investment Plans</h3>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+              <div class="nk-block">
+                <div class="card nk-pricing-wrap">
+                  <div class="nk-pricing-header">
+                    <div class="nk-pricing-header-content text-center">
+
+                      <h4 style="padding-top: 5%;">Choose plan</h4>
+                      <div style="font-size: 1rem;">Choose a plan and start enjoying our
+                        service
+                      </div>
+                      <p></p>
+
+                      <div class="container" style="padding-bottom: 50px;">
+                        <!-- beging row -->
+                        <div class="row">
+
+                          <% plans.forEach(function(plan) { %>
+                          <div class="col-lg-4 col-xxl-4" style="margin-top: 25px;">
+                            <div class="card card-gutter-md nk-pricing-card h-100">
+                              <div class="card-body" style="padding-bottom: 15%; padding-top: 5%; text-align: left;">
+                                <div class="amount mb-4">
+                                  <h6 class="title" style="font-size: 0.9rem; opacity: 85%;">
+                                    <% let upperCaseName = plan.name.toUpperCase(); %>
+                                    <%= upperCaseName %></h6>
+                                  <p class="text text-dark"> </p>
+                                </div>
+                                <div class="amount mb-4">
+                                  <h3 class="mb-3" style="font-size: 1.2rem;">$<%= plan.min %>
+                                    -
+                                    $<%= plan.max %></h3>
+                                  <h5 class="mb-3" style="opacity: 85%; font-size: 1.1rem;">
+                                    ROI: <%= plan.roi %>%</h5>
+                                </div>
+                                <h4 class="mb-3" style="font-size: 1.2rem;">Includes
+                                </h4>
+                                <ul class="nk-list-option-list mb-4">
+                                  <li>
+                                    <em class="icon ni ni-check-circle-fill"></em>
+                                    <span>Duration: <%= plan.duration %> <%= plan.duration === 1 ? 'day' : 'days' %></span>
+                                  </li>
+                                  <li>
+                                    <em class="icon ni ni-check-circle-fill"></em>
+                                    <span>End of Term Return</span> = <span class="ms-auto">Capital +
+                                      Interest.</span>
+                                  </li>
+                                </ul>
+                                <ul class="d-flex flex-wrap gap g-3">
+                                  <li>
+                                    <button data-bs-toggle="modal" data-plan-id="<%= plan.id %>" data-bs-target="#addUserModal1" class="btn btn-primary plan-btn">Choose</button>
+                                  </li>
+
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <% }); %>
+
+                        </div>
+                        <!-- end row -->
+                      </div>
+
+
+
+                    </div>
+
+
+                  </div>
+
+
+                </div>
+
+              </div>
+
+
+              <!-- modals for the plans -->
+
+
+
+
+              <div class="modal fade" role="dialog" id="addUserModal1">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                  <div class="modal-content"><a href="#" class="close" data-bs-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
+                    <div class="modal-body modal-body-lg">
+                      <h5 class="title">Invest</h5>
+                      <hr style="height: 1px; border: none; background-color: black;">
+                      <div class="tab-content">
+                        <div class="tab-pane active" id="personal">
+
+                          <label class="amount" for="amount">
+                            Amount</label>
+
+                          <div class="form-group"><input type="text" class="form-control form-control-lg" id="amount" placeholder="Amount">
+
+                          </div>
+
+
+                          <p></p>
+                          <p></p>
+                          <div class="col-12">
+                            <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
+                              <li><a href="#" data-bs-dismiss="modal" class="btn btn-lg btn-primary invest-btn">Invest</a></li>
+                              <li><a href="#" data-bs-dismiss="modal" class="link link-light">Cancel</a></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+        <%- include('partials/dashboardFooter') %>
