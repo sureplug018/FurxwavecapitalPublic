@@ -230,7 +230,7 @@ exports.login = async (req, res) => {
 
     // Set cookies
     const accessCookieOptions = {
-      expiresIn: new Date(Date.now() + process.env.JWT_EXPIRES_IN),
+      expiresIn: new Date(Date.now() + process.env.ACCESS_TOKEN_EXPIRES_IN),
       secure: false,
       httpOnly: false,
       path: '/',
@@ -239,7 +239,7 @@ exports.login = async (req, res) => {
     };
 
     const refreshCookieOptions = {
-      expiresIn: new Date(Date.now() + process.env.JWT_EXPIRES_IN),
+      expiresIn: new Date(Date.now() + process.env.REFRESH_TOKEN_EXPIRES_IN),
       secure: false,
       httpOnly: false,
       path: '/',
@@ -332,7 +332,7 @@ exports.loginAdmin = async (req, res) => {
 
     // Set cookies
     const accessCookieOptions = {
-      expiresIn: new Date(Date.now() + process.env.JWT_EXPIRES_IN),
+      expiresIn: new Date(Date.now() + process.env.ACCESS_TOKEN_EXPIRES_IN),
       secure: false,
       httpOnly: false,
       path: '/',
@@ -341,7 +341,7 @@ exports.loginAdmin = async (req, res) => {
     };
 
     const refreshCookieOptions = {
-      expiresIn: new Date(Date.now() + process.env.JWT_EXPIRES_IN),
+      expiresIn: new Date(Date.now() + process.env.REFRESH_TOKEN_EXPIRES_IN),
       secure: false,
       httpOnly: false,
       path: '/',
@@ -594,7 +594,7 @@ exports.resetPassword = async (req, res, next) => {
 
     // Set cookies
     const accessCookieOptions = {
-      expiresIn: new Date(Date.now() + process.env.JWT_EXPIRES_IN),
+      expiresIn: new Date(Date.now() + process.env.ACCESS_TOKEN_EXPIRES_IN),
       secure: false,
       httpOnly: false,
       path: '/',
@@ -603,7 +603,7 @@ exports.resetPassword = async (req, res, next) => {
     };
 
     const refreshCookieOptions = {
-      expiresIn: new Date(Date.now() + process.env.JWT_EXPIRES_IN),
+      expiresIn: new Date(Date.now() + process.env.REFRESH_TOKEN_EXPIRES_IN),
       secure: false,
       httpOnly: false,
       path: '/',
@@ -687,7 +687,7 @@ exports.updatePassword = async (req, res) => {
 
     // Set cookies
     const accessCookieOptions = {
-      expiresIn: new Date(Date.now() + process.env.JWT_EXPIRES_IN),
+      expiresIn: new Date(Date.now() + process.env.ACCESS_TOKEN_EXPIRES_IN),
       secure: false,
       httpOnly: false,
       path: '/',
@@ -696,7 +696,7 @@ exports.updatePassword = async (req, res) => {
     };
 
     const refreshCookieOptions = {
-      expiresIn: new Date(Date.now() + process.env.JWT_EXPIRES_IN),
+      expiresIn: new Date(Date.now() + process.env.REFRESH_TOKEN_EXPIRES_IN),
       secure: false,
       httpOnly: false,
       path: '/',
